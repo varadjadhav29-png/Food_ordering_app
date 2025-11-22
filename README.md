@@ -1,148 +1,192 @@
-# Food_ordering_app
-```markdown
-# Food Ordering App (Tkinter)
 
-A simple desktop food ordering interface built with Python’s Tkinter library.  
-Users can select items from a menu, add them to a cart, view the running total, and place an order.
 
----
+#🍔 Food Ordering App – README
 
-## Features
+📌 Project Title
 
-- Graphical user interface (GUI) using Tkinter
-- Predefined menu with item names and prices
-- Add multiple quantities of the same item to the cart
-- Cart display shows each item, quantity, and subtotal
-- Automatic total calculation
-- Order confirmation dialog
-- Handles empty cart when trying to place an order
+Food Ordering Application (Tkinter-Based GUI Project)
+
 
 ---
 
-## Requirements
+📖 Overview
 
-- Python 3.x  
-- Tkinter (usually included by default with standard Python installations)
+The Food Ordering App is a simple graphical desktop application built using Python and Tkinter.
+It allows users to browse a menu, add items to a cart, view total cost, and place an order.
+This project demonstrates GUI development, event-driven programming, and basic data handling.
 
-To check Tkinter availability:
+The system simulates the workflow of a real-world food ordering interface with an easy-to-use layout.
 
-```bash
-python -m tkinter
-```
-
-If a small window appears, Tkinter is installed correctly.
 
 ---
 
-## Installation & Running
+✨ Features
 
-1. Save the provided code into a file, for example:
+Functional Features
 
-   ```bash
-   food_ordering_app.py
-   ```
+1. Menu Display
+Shows available food items with their prices.
 
-2. Run the script with Python:
 
-   ```bash
-   python food_ordering_app.py
-   ```
+2. Add to Cart
+Users can select an item from the list and add it to the cart.
 
-A window titled **“Food Ordering App”** should open.
 
----
+3. Cart Management
 
-## How to Use
+Displays selected items
 
-1. **Select an item**  
-   Click an item in the *Menu* list (e.g., "Pizza").
+Shows quantity
 
-2. **Add to Cart**  
-   Click the **“Add to Cart”** button.  
-   - A popup will confirm the item was added.  
-   - The *Your Cart* text area updates with:
-     - Item name
-     - Quantity (e.g., `x2`)
-     - Subtotal price for that item
+Updates total amount automatically
 
-3. **View Total**  
-   At the bottom of the cart display, you’ll see:
 
-   ```text
-   Total: $XX.XX
-   ```
 
-4. **Place Order**  
-   Click **“Place Order”**:
-   - If the cart is empty, a warning appears.
-   - If not empty, you’ll be asked to confirm the order.
-   - On confirmation:
-     - A “Thank you” message shows.
-     - The cart is cleared and the display is reset.
+4. Place Order
+Confirms and completes the order using message boxes.
+
+
+
 
 ---
 
-## Code Overview
+🛠 Technologies / Tools Used
 
-- `menu`: A dictionary containing item names and their prices.
-- `cart`: A dictionary that tracks items and their quantities.
+Python 3
 
-### Functions
+Tkinter (Python GUI Toolkit)
 
-- `add_to_cart()`
-  - Gets the currently selected menu item.
-  - Increments quantity in `cart`.
-  - Calls `update_cart_display()`.
-  - Shows a confirmation messagebox.
+Messagebox module for pop-ups and alerts
 
-- `update_cart_display()`
-  - Clears the cart text area.
-  - Loops through `cart` items, calculating:
-    - Subtotal per item (`price * quantity`)
-    - Running total for the whole order
-  - Displays all items and the total.
+Dictionary-based data storage for menu and cart
 
-- `place_order()`
-  - Checks if `cart` is empty.
-  - If not, asks for confirmation.
-  - On confirmation, shows success message, clears `cart`, and updates display.
+
 
 ---
 
-## Customization
+📁 Folder Structure (Recommended for GitHub)
 
-- **Change the Menu Items or Prices**
+FoodOrderingApp/
+│
+├── src/
+│   ├── app.py
+│
+├── README.md
+└── statement.md
 
-  Edit the `menu` dictionary at the top:
-
-  ```python
-  menu = {
-      "Burger": 5.99,
-      "Pizza": 8.99,
-      "Salad": 4.49,
-      "Fries": 2.99,
-      "Soda": 1.99
-  }
-  ```
-
-  Add, remove, or rename items, and adjust prices as needed.
-
-- **Change Window Size or Title**
-
-  ```python
-  root.title("Food Ordering App")
-  root.geometry("400x400")
-  ```
-
-  Modify these lines to set a different title or window dimensions.
 
 ---
 
-## Notes
+▶ Steps to Install & Run the Project
 
-- This is a basic example intended to demonstrate Tkinter GUI concepts:
-  - Listbox usage
-  - Text widget for display
-  - Message boxes for feedback
-- It does not include payment processing, user accounts, or persistence (data is lost when the app is closed).
-```
+1. Install Python
+
+Ensure Python 3.x is installed.
+Check with:
+
+python --version
+
+2. Clone the Repository
+
+git clone <your-repository-link>
+cd FoodOrderingApp
+
+3. Run the Application
+
+python src/app.py
+
+The GUI window will open automatically.
+
+
+---
+
+🧪 Instructions for Testing
+
+You can test the app through the following steps:
+
+1. Open the app
+Verify that menu items appear in the listbox.
+
+
+2. Select a menu item and click ‘Add to Cart’
+
+A message box should confirm the addition
+
+The cart should update with the selected item and quantity
+
+
+
+3. Add multiple items
+
+Quantities should increase
+
+Total cost should update correctly
+
+
+
+4. Click ‘Place Order’
+
+If the cart is empty → warning message appears
+
+If items exist → confirmation dialog appears
+
+After confirmation → success message appears and cart resets
+
+
+
+5. Check GUI responsiveness
+Ensure all buttons and text areas behave correctly.
+
+
+
+
+---
+
+🖼 Screenshots (Add in GitHub Repo)
+
+You may add the following screenshots:
+
+Main menu window
+
+Cart with items
+
+Order confirmation popup
+
+
+Example placeholders:
+
+![Main Screen](screenshots/main.png)
+![Cart](screenshots/cart.png)
+
+
+---
+
+📌 Future Enhancements
+
+Add a database to store orders.
+
+Add a login/signup module.
+
+Include images for menu items.
+
+Add quantity selector instead of multiple clicks.
+
+Implement billing receipt download.
+
+
+
+---
+
+🧩 Project Status
+
+✔ Fully functional basic prototype
+🔧 Can be extended with advanced modules (Billing, Database, User Management)
+
+
+---
+
+📄 License
+
+This project is free to use for academic purposes.
+
+
