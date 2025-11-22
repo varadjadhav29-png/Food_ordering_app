@@ -153,12 +153,6 @@ Cart with items
 Order confirmation popup
 
 
-Example placeholders:
-
-![Main Screen](screenshots/main.png)
-![Cart](screenshots/cart.png)
-
-
 ---
 
 📌 Future Enhancements
