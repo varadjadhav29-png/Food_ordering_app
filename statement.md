@@ -17,15 +17,7 @@ Dynamically calculating and displaying the running total of the order.
 
 Providing a simple confirmation step for placing the order.
 
-Exclusions from Scope:
 
-Persistence (saving data to a file or database).
-
-User authentication or role management (e.g., staff vs. customer).
-
-Integration with payment gateways or kitchen display systems.
-
-Advanced error logging or complex non-functional requirements.
 
 
 Target Users 
