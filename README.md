@@ -1,6 +1,6 @@
 
 
-#🍔 Food Ordering App – README
+🍔 Food Ordering App – README
 -
 📌 Project Title
 
